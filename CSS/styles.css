@@ -17,7 +17,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-a, a:hover {
+a,
+a:hover {
     color: unset;
     text-decoration: none;
 }
@@ -65,7 +66,12 @@ a, a:hover {
     margin: 0 auto;
 }
 
-.news-container{
+#news {
+    background-color: var(--color-white);
+    padding-bottom: 40px;
+}
+
+.news-container {
     background-color: var(--color-light-gray);
     border-radius: 8px;
     margin: 10px 10px 28px 10px;
@@ -76,13 +82,13 @@ a, a:hover {
 .news-container hr {
     border-top: 1px solid var(--color-green);
     margin: 3px 0 0 0;
-  }
+}
 
 .news-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--text-gray);
-    margin-top: 40px;   
+    margin-top: 40px;
 }
 
 .news-container h2 {
@@ -113,19 +119,79 @@ a, a:hover {
     margin: 12px 0;
 }
 
-.botton-main {
+.news-btn-container {
     display: flex;
-    align-items: center; 
-    background-color: var(--color-salmon);
-    /* width: 100%; */
-    width: 244px;
-    height: 67px;
-    border-radius: 8px;
-    margin: 0 auto;
+    justify-content: center;
 }
 
-.botton-text {
-    text-align: center;
-    margin: 0 auto;
+.games-btn-news {
+    padding: 0;
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-salmon);
     color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#games {
+    background-color: var(--color-light-gray);
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.games-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.games-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-green);
+    padding-top: 40px;
+}
+
+.games-card {    
+    background-color: var(--color-white);
+    max-width: 300px;
+    margin: 27px 10px 0 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.games-card img {
+    width: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.games-card h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-gray);
+}
+
+.games-card p {
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+.games-card-product {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-green);
+}
+
+.games-card h1 {
+    font-size: 36px;
+    color: var(--color-green);
+    padding-top: 13px;
+    padding-bottom: 15px;
 }
