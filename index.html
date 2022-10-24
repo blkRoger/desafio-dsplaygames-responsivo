@@ -11,12 +11,14 @@
     <header class="nav-container">
       <nav class="container nav-main">
         <a class="nav-brand" href="#">DSPlayGames</a>
-        <!-- <ul class="menu-itens">
-                <li><a href="#news">Notícias</a></li>
-                <li><a href="#games">Jogos</a></li>
-                <li><a href="#form">Inscreva-se</a></li>
-            </ul>  -->
-        <img src="img/profile.svg" alt="avatar" />
+        <div class="menu-itens-ld-dir">
+          <ul class="menu-itens">
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#games">Jogos</a></li>
+            <li><a href="#form">Inscreva-se</a></li>
+          </ul>
+          <img src="img/profile.svg" alt="avatar" />
+        </div>
       </nav>
     </header>
     <main>
@@ -91,7 +93,10 @@
             <img src="img/game.png" alt="Jogo 01" />
             <div>
               <h5>Horizon Forbidden West</h5>
-              <p> <span class="games-card-product">De</span> Sony Interactive Entertainment</p>
+              <p>
+                <span class="games-card-product">De</span> Sony Interactive
+                Entertainment
+              </p>
               <h1>9.7</h1>
             </div>
           </div>
@@ -99,7 +104,10 @@
             <img src="img/game.png" alt="Jogo 02" />
             <div>
               <h5>Horizon Forbidden West</h5>
-              <p> <span class="games-card-product">De</span> Sony Interactive Entertainment</p>
+              <p>
+                <span class="games-card-product">De</span> Sony Interactive
+                Entertainment
+              </p>
               <h1>9.7</h1>
             </div>
           </div>
@@ -107,24 +115,58 @@
             <img src="img/game.png" alt="Jogo 02" />
             <div>
               <h5>Horizon Forbidden West</h5>
-              <p> <span class="games-card-product">De</span> Sony Interactive Entertainment</p>
+              <p>
+                <span class="games-card-product">De</span> Sony Interactive
+                Entertainment
+              </p>
               <h1>9.7</h1>
             </div>
           </div>
         </div>
       </section>
-      <section></section>
+      <section id="form">
+        <h1 class="form-title">Faça a sua inscrição</h1>
+        <div class="form-container">
+          <form action="#">
+            <div class="form-ctrl-person">
+              <input type="text" placeholder="Nome completo" />
+              <input type="text" placeholder="Email" />
+            </div>
+
+            <div class="form-ctrl-level">
+              <label for="ctrl-level">Qual sua plataforma preferida?</label>
+              <div id="ctrl-level">
+                <input type="radio" id="ctrl-level-1" name="level" />
+                <label for="ctrl-level-1">PC</label><br />
+                <input type="radio" id="ctrl-level-2" name="level" />
+                <label for="ctrl-level-2">Xbox</label><br />
+                <input type="radio" id="ctrl-level-2" name="level" />
+                <label for="ctrl-level-3">Playstation</label>
+              </div>
+            </div>
+
+            <div class="form-ctrl-news">
+              <input type="checkbox" name="news" id="ctrl-news" />
+              <label for="ctrl-news">Desejo receber novidades.</label>
+            </div>
+            <div class="form-btn">
+              <button class="form-btn-sbmt" type="submit">Enviar</button>
+              <button class="form-btn-rst" type="reset">Limpar</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-      <div>
-        <div>
+      <div class="container footer-container">
+        <div class="footer-social">
           <a href="#">@dsplaygames</a>
           <a href="#">/dsplaygames</a>
         </div>
-        <div>
+        <div class="footer_company">
           <p>DS Play Games Ltda. Todos direitos reservados</p>
         </div>
-        <div>
+        <div class="footer-info">
           <a href="#">Política de privacidade</a>
           <a href="#">Termos de uso</a>
         </div>
